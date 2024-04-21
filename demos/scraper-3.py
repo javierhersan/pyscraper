@@ -29,7 +29,7 @@ def run(playwright: Playwright) -> None:
     html = page.inner_html("div[aria-label='Sushi Koi']")
     print(html)
 
-    with open("./demos/output/output.txt", "w", encoding='utf-8') as text_file:
+    with open("./demos/output/output.html", "w", encoding='utf-8') as text_file:
         text_file.write(html)
     # page.mouse.wheel(0,4000)
     # page.get_by_label("Más reseñas (125)").click()
